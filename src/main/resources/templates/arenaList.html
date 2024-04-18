@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Arenas Planetárias</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Arenas Planetárias</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="arenas : ${arenas}">
+                    <td th:text="${arenas.nome}"></td>
+                    <td th:text="${arenas.descricao}"></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/cadastro">Adicionar Arenas</a>
+    </body>
+</html>
